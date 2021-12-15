@@ -2,14 +2,12 @@ import React, {useState} from 'react'
 // import PropTypes from 'prop-types'
 
 
-function FeedbackItem() {
-    const [rating, setRating] = useState(1)
-    const [text, setText] = useState('Default rating text!')
+function FeedbackItem({item}) {
 
     return (
         <div className='card'>
-            <div className='num-display'>{rating}</div>
-            <div className='text-display'>{text}</div>
+            <div className='num-display'>{item.rating}</div>
+            <div className='text-display'>{item.text}</div>
             
         </div>
     )
