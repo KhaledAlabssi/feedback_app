@@ -7,6 +7,8 @@ import FeedbackStats from "./components/FeedbackStats";
 import Header from "./components/Header";
 import FeedbackData from "./data/FeedbackData"
 import About from "./pages/About";
+import AboutIcon from "./components/AboutIcon";
+
 
 function App() {
   const [feedback, setFeedback] = useState(FeedbackData)
@@ -35,6 +37,7 @@ function App() {
         </Route>
         <Route path='/about'element={<About />} />
         </Routes>
+        <AboutIcon />
       </div>
     </Router>
   );
